@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.clearfix{
+.clearfix::after{
     content: '';
     display: table;
     clear: both;
@@ -70,6 +70,7 @@ body{
     bottom: 15px;
     left: 0;
     color: white;
+    transition: bottom 0.5s ;
 }
 
 .sost{
@@ -83,6 +84,7 @@ body{
     bottom: 15px;
     left: 50px;
     color: white;
+    transition: bottom 0.5s ;
 }
 
 .only{
@@ -130,9 +132,49 @@ body{
 .scontato{
     color: tomato;
 }
-/* debug */
 
- /* .debug .container{
-    background-color: #c5c5c5;
-}  */
 
+/* bonus */
+
+.prodotto:hover .sale {
+    bottom: 110px;
+}
+
+.prodotto:hover .sost {
+    bottom: 110px;
+}
+
+.size{
+    display: block;
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition:  height 1s ;
+}
+
+.prodotto:hover .size {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+}
+
+
+
+.size span{
+    display: none;
+}
+
+.prodotto:hover .size span {
+    display: block;
+    float: left;
+    width: 20%;
+    border: 1px solid gray;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin: 15px 7px;
+    text-transform: uppercase;
+}
