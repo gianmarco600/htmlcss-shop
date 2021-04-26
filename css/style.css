@@ -19,23 +19,40 @@ body{
 .container{
     margin: 20px auto;
     width: 1170px;
+    
 }
 
 .prodotto{
     width: calc( 100% / 3);
     padding: 20px 10px;
     float: left;
-    position: relative;
+    transition: 1s;
+    
 }
 
-.prodotto > img{
+.anteprima{
+    position: relative;
     width: 100%;
+}
+
+.prodotto > .anteprima > img{
+    width: 100%;
+}
+
+.aside{
+    display: block;
+    transition: 1s;
+}
+
+.bside{
+    display: none;
+    transition: 1s;
 }
 
 .heart{
     position: absolute;
-    top: 30px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     width: 50px;
     font-size: 30px;
     line-height: 40px;
@@ -43,11 +60,57 @@ body{
     text-align: center;
 }
 
+.sale{
+    background-color: rgba(255, 99, 71, 0.9);
+    text-align: center;
+    width: 100px;
+    line-height: 25px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    color: white;
+}
+
+.sost{
+    background-color: #3f8259;
+    text-transform:capitalize;
+    text-align: center;
+    width: 100px;
+    line-height: 25px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 110px;
+    color: white;
+}
+
+.prodotto:hover .heart{
+    color: tomato;
+}
+
+.anteprima:hover{
+    cursor: pointer;
+}
+
+.prodotto:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.prodotto:hover .aside{
+    display: none;
+    transition: 1s;
+}
+
+.prodotto:hover .bside{
+    display: block;
+    transition: 1s;
+}
+
 
 /* debug */
 
-.debug .container{
-    height: 500px;
-    background-color: red;
-}
+ /* .debug .container{
+    background-color: #c5c5c5;
+}  */
 
