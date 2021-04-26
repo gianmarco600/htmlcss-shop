@@ -107,6 +107,18 @@ body{
     transition: 1s;
 }
 
+.prodotto .prod-name{
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.prodotto .prod-desc{
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
 
 /* debug */
 
