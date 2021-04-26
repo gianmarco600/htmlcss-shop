@@ -61,11 +61,11 @@ body{
 }
 
 .sale{
-    background-color: rgba(255, 99, 71, 0.9);
+    background-color: red;
     text-align: center;
-    width: 100px;
+    width: 40px;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     bottom: 15px;
     left: 0;
@@ -81,8 +81,12 @@ body{
     font-size: 15px;
     position: absolute;
     bottom: 15px;
-    left: 110px;
+    left: 50px;
     color: white;
+}
+
+.only{
+    left: 10px;
 }
 
 .prodotto:hover .heart{
@@ -94,7 +98,7 @@ body{
 }
 
 .prodotto:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .prodotto:hover .aside{
@@ -119,7 +123,13 @@ body{
     font-size: 20px;
 }
 
+.prezzo{
+    margin: 15px 0;
+}
 
+.scontato{
+    color: tomato;
+}
 /* debug */
 
  /* .debug .container{
