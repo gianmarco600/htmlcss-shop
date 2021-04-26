@@ -25,11 +25,24 @@ body{
     width: calc( 100% / 3);
     padding: 20px 10px;
     float: left;
+    position: relative;
 }
 
 .prodotto > img{
     width: 100%;
 }
+
+.heart{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    background-color: white;
+    text-align: center;
+}
+
 
 /* debug */
 
