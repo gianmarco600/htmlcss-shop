@@ -1,0 +1,40 @@
+/* common */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin: 20px auto;
+    width: 1170px;
+}
+
+.prodotto{
+    width: calc( 100% / 3);
+    padding: 20px 10px;
+    float: left;
+}
+
+.prodotto > img{
+    width: 100%;
+}
+
+/* debug */
+
+.debug .container{
+    height: 500px;
+    background-color: red;
+}
+
