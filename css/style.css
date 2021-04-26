@@ -16,6 +16,8 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* main */
+
 .container{
     margin: 20px auto;
     width: 1170px;
@@ -90,17 +92,25 @@ body{
     left: 10px;
 }
 
+/* animazione cuore */
+
 .prodotto:hover .heart{
     color: tomato;
 }
+
+/* cambio cursore */
 
 .anteprima:hover{
     cursor: pointer;
 }
 
+/* ombra box */
+
 .prodotto:hover {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* cambio immagini */
 
 .prodotto:hover .aside{
     display: none;
@@ -111,6 +121,10 @@ body{
     display: block;
     transition: 0.2s;
 }
+
+/* fine cambio immagini */
+
+/* prodotto */
 
 .prodotto .prod-name{
     padding-top: 10px;
@@ -124,6 +138,8 @@ body{
     font-weight: 300;
     font-size: 20px;
 }
+
+/* etichette */
 
 .prezzo{
     margin: 15px 0;
